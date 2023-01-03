@@ -16,9 +16,6 @@
    </style>
 </head>
 <body>
-
-
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border shadow p-3 mb-5 bg-body rounded m-3">
                 <div class="container-fluid">

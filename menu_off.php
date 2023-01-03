@@ -22,17 +22,17 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#">JonasFrancoDEV</a>
+                    <a class="navbar-brand" href="index.php">JonasFrancoDEV</a>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#" id="nav-link" >Home</a>
+                            <a class="nav-link active" aria-current="page" href="index.php" id="nav-link" >Home</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link disabled" href="#" id="nav-link">ADD ALUNO</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true" id="nav-link">Login</a>
+                            <a class="nav-link" href="login.php" tabindex="-1" aria-disabled="true" id="nav-link">Login</a>
                             </li>
                         </ul>
                         <form class="d-flex">
@@ -43,11 +43,6 @@
                 </div>
         </nav>
     </header>
-
-     <div>
-        <h1>Esta página está em construção.</h1>
-        <img src="img/com_bigode_2.jpg" alt="foto-jonas">
-     </div>
 
 
 
