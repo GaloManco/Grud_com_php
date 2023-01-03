@@ -45,7 +45,7 @@
     </header>
 
      <div>
-        <h1>Essa página esta em construção.</h1>
+        <h1>Esta página está em construção.</h1>
      </div>
 
 
