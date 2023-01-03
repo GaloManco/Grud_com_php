@@ -46,7 +46,7 @@
 
      <div>
         <h1>Esta página está em construção.</h1>
-        <img src="com_bigote_2.jpg" alt="foto-jonas">
+        <img src="img/com_bigode_2.jpg" alt="foto-jonas">
      </div>
 
 
