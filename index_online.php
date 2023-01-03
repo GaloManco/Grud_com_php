@@ -8,11 +8,15 @@
 </head>
 <body>
     <?php 
-        include_once "menu_off.php";
+        include_once "menu.php";
         
-        // if(!isset($_SESSION['nome'])){
+        // if(isset($_SESSION)){
+        // header("Location:index_online.php");
+        // }
+        // else{
         //     header("Location:index_off.php");
         // }
+    
     ?>
 
 
