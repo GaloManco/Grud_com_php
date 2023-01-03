@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        include_once "menu.php";
+        include_once "menu_online.php";
         
         // if(isset($_SESSION)){
         // header("Location:index_online.php");

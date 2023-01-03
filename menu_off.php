@@ -16,9 +16,6 @@
    </style>
 </head>
 <body>
-
-
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light border shadow p-3 mb-5 bg-body rounded m-3">
                 <div class="container-fluid">
@@ -46,6 +43,11 @@
                 </div>
         </nav>
     </header>
+
+     <div>
+        <h1>Essa página esta em construção.</h1>
+     </div>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
