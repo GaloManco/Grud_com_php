@@ -1,32 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body>
-    <?php
-    include_once "menu_off.php";
 
-    ?>
-
-
-
-        <form class="row g-3">
+        <form class=" container row g-3 bg-info mx-auto mt-2 p-5 shadow-lg rounded-3">
             <div class="col-12">
                 <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                <input type="text" class="form-control shadow" id="nome" placeholder="Digite seu nome" required>
             </div>
             <div class="col-md-6">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type="email" class="form-control shadow" id="inputEmail4" required>
             </div>
             <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <input type="password" class="form-control shadow" id="inputPassword4" required>
             </div>
             <!-- <div class="col-12">
                 <label for="inputAddress2" class="form-label">Address 2</label>
@@ -49,7 +33,7 @@
             </div> -->
             <div class="col-12">
                 <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <input class="form-check-input shadow" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck">
                     Check me out
                 </label>
