@@ -5,7 +5,7 @@
         // Porta
         // User
         // Password
-    $db_endereço = 'localhost';
+    $db_endereco = 'localhost';
     $db_name = 'escola';
     $port = '3306';
     $user = 'root';
@@ -16,7 +16,7 @@
        
         // Fazer conecção com db.
         // PDO "pgsql:host=;port=;dbname=", $user, $pass, [PDO::]
-        $pdo = new PDO("mysql:host=$db_endereço; port=$port; dbname=$db_name", $user, $pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+        $pdo = new PDO("mysql:host=$db_endereco;  dbname=$db_name;  port=$port;", $user, $pass, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
 
         // echo 'conectado ao db';
     
@@ -26,7 +26,6 @@
         echo 'Falha ao conectar ao db' . $e->getMessage();
     }
     
-
 
 
 

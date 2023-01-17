@@ -40,24 +40,29 @@
 
 
         <!-- Div Erro para caso o cadastro não der certo -->
-        <div class="row">
-
-                <div class="container mt-5">
-                    <?php if(!empty($_GET['msgErro'])) { ?>
-                    <div class="alert alert-warning" role="alert">
-                        <?php echo $_GET["msgErro"];?>
-                    </div>
-                    <?php };?>
-                </div>
-                <!-- Div para Messagem de sucesso ao adicionar elementos no SQL -->
-                <div class="container mt-5">
-                    <?php if(!empty($_GET['msgSucesso'])) { ?>
-                        <div class="alert alert-success" role="alert">
-                            <?php echo $_GET["msgSucesso"];?>
-                        </div>
-                        <?php };?>
-                </div> 
+        <div class="container row mt-3 m-auto">
+            <div class="col-4 m-auto">
+                <!-- Script de alerta -->
+                <?php if(!empty($_GET['msgErro'])) { ?>
+                <div class="alert alert-warning " role="alert">
+                    <?php echo $_GET["msgErro"];?>
+                </div><?php };?>
+            </div>
         </div>
+             
+                
+
+        <!-- Div para Messagem de sucesso ao adicionar elementos no SQL -->
+        <div class="container row mt-3 m-auto">
+            <div class="col-4 m-auto">
+                <!-- Script de alerta -->
+                <?php if(!empty($_GET['msgSucesso'])) { ?>
+                <div class="alert alert-success" role="alert">
+                    <?php echo $_GET["msgSucesso"];?>
+                </div><?php };?>
+            </div> 
+        </div>
+            
 
 
 

@@ -48,7 +48,7 @@
 
 
         <!-- Div Erro para caso o cadastro não der certo -->
-        <div class="container mt-5">
+        <div class="container mt-5 m-auto col-3 ">
             <?php if(!empty($_GET['msgErro'])) { ?>
                     <div class="alert alert-warning" role="alert">
                         <?php echo $_GET["msgErro"];?>
@@ -56,7 +56,7 @@
             <?php };?>
         </div>
         <!-- Div para Messagem de sucesso ao adicionar elementos no SQL -->
-        <div class="container mt-5">
+        <div class="container mt-5  m-auto col-3">
             <?php if(!empty($_GET['msgSucesso'])) { ?>
                     <div class="alert alert-success" role="alert">
                         <?php echo $_GET["msgSucesso"];?>
