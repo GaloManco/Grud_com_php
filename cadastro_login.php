@@ -8,9 +8,9 @@
         </div>
              
 
-        <div class=" container-fluid  shadow-lg bg-light border rounded-3 ">
-            <div class="row justify-content-center bg-primary ">
-                <div class="col-sm-6 col-md-4">
+        <div class=" container-fluid   ">
+            <div class="row justify-content-center  ">
+                <div class="col-sm-6 col-md-4 bg-light shadow-lg border rounded-3 ">
 
                     <!-- Formulário de cadatro de usuario -->
                     <form  method="post" action="processo_cadastro_login">
