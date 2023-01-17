@@ -1,40 +1,48 @@
 
+        
+        
         <div class="row m-auto">
-            <div class="container  col-3 mb-3 text-center"><h2>Criar conta de usuario</h2></div>
+            <div class="container  col-3 mb-3 text-center">
+                <h2>Criar conta de usuario</h2>
+            </div>
         </div>
              
 
-        <div class=" container m-auto bg-primary shadow-lg bg-light col-4 border rounded-3 ">
+        <div class=" container-fluid  shadow-lg bg-light border rounded-3 ">
+            <div class="row justify-content-center bg-primary ">
+                <div class="col-sm-6 col-md-4">
 
-            <!-- Formulário de cadatro de usuario -->
-            <form  method="post" action="processo_cadastro_login">
-              
-                <div class="row">
-                    <div class="col-8 m-4" >
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control border shadow" id="nome" placeholder="Digite seu nome" name="nome" required>
-                    </div>
+                    <!-- Formulário de cadatro de usuario -->
+                    <form  method="post" action="processo_cadastro_login">
+                        
+                        <div class="row">
+                            <div class="col-sm-6 col-md-8 col-lg-11 mb-3 m-auto" >
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" class="form-control border shadow" id="nome" placeholder="Digite seu nome" name="nome" required>
+                            </div>
+                        </div>
+                        
+                            <div class="row ">
+                                <div class="col-sm-6 col-md-6 col-lg-6 m-auto">
+                                    <label for="inputEmail4" class="form-label">Email</label>
+                                    <input type="email" class="form-control border shadow" id="inputEmail4" name="email" placeholder="Email" required>
+                                </div>
+                                
+                                <div class="col-sm-6 col-md-4 col-lg-4 m-auto">
+                                    <label for="inputPassword4" class="form-label">Password</label>
+                                    <input type="password" class="form-control border shadow " id="inputPassword4" name="password"  placeholder="Password" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-3 mb-3">
+                                <div class="col-4 ">
+                                    <button type="submit" class="btn btn-primary mb-4 m-4">Enviar</button>
+                                </div>
+                            </div>
+                            
+                    </form>
                 </div>
-               
-                <div class="row ">
-                    <div class="col-6 m-auto">
-                        <label for="inputEmail4" class="form-label">Email</label>
-                        <input type="email" class="form-control border shadow" id="inputEmail4" name="email" placeholder="Email" required>
-                    </div>
-                    
-                    <div class="col-4 m-auto">
-                        <label for="inputPassword4" class="form-label">Password</label>
-                        <input type="password" class="form-control border shadow " id="inputPassword4" name="password"  placeholder="Password" required>
-                    </div>
-                </div>
-                
-                <div class="row mt-3 mb-3">
-                    <div class="col-4 ">
-                        <button type="submit" class="btn btn-primary mb-4 m-4">Enviar</button>
-                    </div>
-                </div>
-
-            </form>
+            </div>
         </div>
 
 
