@@ -11,43 +11,52 @@
         body{
             height: 100em;
             
+           
         }
     </style>
 </head>
 
-<body class="bg-primary">
-    
-        <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light border shadow p-3 mb-5 bg-body rounded m-3">
-                        <div class="container-fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <a class="navbar-brand" href="home">JonasFrancoDEV</a>
-                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                    <a class="nav-link active " aria-current="page" href="home" id="nav-link" >Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" id="nav-link">ADD ALUNO</a>
-                                    </li>
-                                    
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="login" tabindex="-1" aria-disabled="true" id="nav-link">Login</a>
-                                    </li>
-                                    <li class="nav-item">
-                                    <a class="nav-link" href="cadastro_login" tabindex="-1" aria-disabled="true" id="nav-link">Criar conta</a>
-                                    </li>
+<body class="">
 
-                                    
-                                </ul>
-                                <form class="d-flex" method="get">
-                                    <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search" name="pesquisar">
-                                    <button class="btn btn-outline-success" type="submit">Procurar</button>
-                                </form>
-                            </div>
-                        </div>
-                </nav>
-        </header>
- 
+
+
+
+
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border shadow p-3 mb-5 bg-body rounded m-3 ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="home">JonasFrancoDEV</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="home" id="nav-link" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" id="nav-link">Menu</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="login" tabindex="-1" aria-disabled="true" id="nav-link">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cadastro_login" tabindex="-1" aria-disabled="true" id="nav-link">Criar conta</a>
+                        </li>
+                        
+                        
+                    </ul>
+                    <form class="d-flex" method="get">
+                        <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search" name="pesquisar">
+                        <button class="btn btn-outline-success" type="submit">Procurar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+   
+    
+    
