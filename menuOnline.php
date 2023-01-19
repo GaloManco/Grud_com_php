@@ -24,6 +24,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <img src="img/OIP.jpg" alt="icone-aldeia-da-folha" width="80px" height="80px">
                     <a class="navbar-brand" href="home">JonasFrancoDEV</a>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -35,8 +36,9 @@
                                 <div class="dropdown">
                                     <button class="btn dropdown-toggle" id="menu-suspenso-oculto" data-bs-toggle="dropdown">Menu</button>
                                     <ul class="dropdown-menu">
-                                        <li><a href="add_aluno" class="dropdown-item">Add Aluno</a></li>
-                                        <li><a href="lista_alunos" class="dropdown-item">Lista de alunos</a></li>
+                                        <li><a href="add_aluno" class="dropdown-item">Matrícular Ninja</a></li>
+                                        <li><a href="lista_alunos" class="dropdown-item">Lista de Ninjas</a></li>
+                                        <li><a href="pesquisar_aluno" class="dropdown-item">Adicionar Notas</a></li>
                                     </ul>
                                 </div>
                             </li>
