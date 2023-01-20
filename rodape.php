@@ -4,17 +4,20 @@
 
 
     <footer>
-        <div class="container p-3 mb-2 bg-success text-white border shadow">
-            <h4>Sobre</h4>
-            <p>Esse site foi criado apenas para praticar conceitos e testa conhecimento.<br>
-            Você pode se cadastrar com email fictício para fazer o login e testar suas funções. <br>
-            Nele você pode cadastra pessonagem do ANIMI NARUTO como se estivesse em uma escola e adicionar notas das suas matérias escolar.<br>
-            Nada impede de também você cadastra qualquer outro pessonagem de Animi que você goste.</p>
-            <p></p>
-            <hr>   
-            <h4>Contato</h4>
-            <h6>Email:minhacontajonas@gmail.com</h6>
-            <h6>Linkdin:https://www.linkedin.com/in/dev-jonasfranco/ </h6>
+        <div class="container-fluid bg-success border ">
+            <div class="container p-3 mb-2 bg-success text-white ">
+                <h4>Sobre</h4>
+                <p>Esse site foi criado apenas para praticar conceitos e testa conhecimento.<br>
+                Você pode se cadastrar com email fictício para fazer o login e testar suas funções. <br>
+                Nele você pode cadastra pessonagem do ANIMI NARUTO como se estivesse em uma escola e adicionar notas das suas matérias escolar.<br>
+                Nada impede de também você cadastra qualquer outro pessonagem de Animi que você goste.</p>
+                <p></p>
+                <hr>   
+                <h4>Contato</h4>
+                <h6>Email:minhacontajonas@gmail.com</h6>
+                <h6>Linkdin:https://www.linkedin.com/in/dev-jonasfranco/ </h6>
+
+        </div>
 
         </div>
     </footer>

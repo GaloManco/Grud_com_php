@@ -15,7 +15,7 @@
 
    
 
-<div style="height: 40em;">
+<!-- <div style="height: 40em;"> -->
 
 <h1 class="text-center">Pesquisar Ninja</h1>
 
