@@ -4,7 +4,7 @@
 
 
     <footer>
-        <div class="container-fluid bg-success border ">
+        <div class="container-fluid bg-success border mt-5 ">
             <div class="container p-3 mb-2 bg-success text-white ">
                 <h4>Sobre</h4>
                 <p>Esse site foi criado apenas para praticar conceitos e testa conhecimento.<br>
@@ -24,4 +24,14 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var imgs = document.querySelectorAll('.img-jonas img');
+            if (imgs.length === 2) {
+                imgs.forEach(function(img) {
+                img.classList.add('two-imgs');
+                });
+        }
+        });
+    </script>
 </html>

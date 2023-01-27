@@ -1,10 +1,26 @@
-
-
+      
+<div class="container row mt-3 m-auto">
+    <div class="col-4 m-auto">
+        <!-- Script de alerta -->
+        <?php if(!empty($_GET['msgErro'])) { ?>
+        <div class="alert alert-warning " role="alert">
+            <?php echo $_GET["msgErro"];?>
+        </div><?php };?>
+    </div>
+</div>
+     
         
 
-
-
-
+<!-- Div para Messagem de sucesso ao adicionar elementos no SQL -->
+<div class="container row mt-3 m-auto">
+    <div class="col-4 m-auto">
+        <!-- Script de alerta -->
+        <?php if(!empty($_GET['msgSucesso'])) { ?>
+        <div class="alert alert-success" role="alert">
+            <?php echo $_GET["msgSucesso"];?>
+        </div><?php };?>
+    </div> 
+</div>
 
 
 
@@ -27,9 +43,14 @@ if (isset($_SESSION['user_nome'])){
         echo '<form action="" method="post" class="col-sm-10 col-md-8 col-lg-4 col-xl-4 col-xxl-4 mx-auto">';
     
             // <!-- Formulário nome do aluno -->
-            echo '<div class="mb-3 col-sm-9 col-md-7 col-lg-11 col-xl-11 col-xxl-11 mx-auto">';
+            echo '<div class=" col-sm-9 col-md-7 col-lg-11 col-xl-11 col-xxl-11 mx-auto">';
                 echo '<label for="pesquisar" class="form-label"></label>';
-                echo '<input type="text" class="form-control" name="primeiro_nome" placeholder="Nome do ninja">';
+                echo '<input type="text" class="form-control" id="pesquisar" name="primeiro_nome" placeholder="Nome do ninja">';
+            echo '</div>';
+            // <!-- Formulario data -->
+            echo '<div class="mb-3 col-sm-9 col-md-7 col-lg-11 col-xl-11 col-xxl-11 mx-auto">';
+                echo '<label for="data" class="form-label"></label>';
+                echo '<input type="text" class="form-control" id="data" name="data" placeholder="Data ano letivo" min="2000" max="2050">';
             echo '</div>';
     
             // <!-- Formulário de seleção de matéria -->
@@ -134,7 +155,7 @@ if (isset($_SESSION['user_nome'])){
                     echo "<td>{$resposta[$cont]['primeiro_nome']}</td>";
                     echo "<td>{$resposta2[0]['nome_materia']}</td>";
                     //Opção para adicionar notas
-                    echo "<td><a href='processo_adicionar_notas&idnome={$resposta[$cont]['id']}&idmateria={$resposta2[0]["id"]}' class='btn btn-primary'> Adicionar notas </a></td>";
+                    echo "<td><a href='adicionar_notas&idnome={$resposta[$cont]['id']}&idmateria={$resposta2[0]["id"]}&data={$_POST['data']}' class='btn btn-primary'> Adicionar notas </a></td>";
     
                     echo "</td>";
                     echo '</tr>';
@@ -144,9 +165,9 @@ if (isset($_SESSION['user_nome'])){
                 echo '</table>';
     
     
-            }else{
+            }
+            else{
     
-                
                 echo '<div class="container row mt-3 m-auto">';
                 echo '<div class="col-4 m-auto">';
                         // Script de alerta
@@ -155,6 +176,7 @@ if (isset($_SESSION['user_nome'])){
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
+                
             }
                  
         } catch (PDOException $e) {
@@ -164,6 +186,9 @@ if (isset($_SESSION['user_nome'])){
     
     }
     else{
+
+        
+
         echo '<div class="container row mt-3 m-auto">';
         echo '<div class="col-4 m-auto">';
                 // Script de alerta
@@ -172,6 +197,8 @@ if (isset($_SESSION['user_nome'])){
         echo '</div>';
         echo '</div>';
         echo '</div>';
+        
+
 
 
     }

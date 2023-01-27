@@ -10,6 +10,23 @@
 
 </div> -->
 
+<!-- Div Erro para caso o cadastro não der certo -->
+<div class="container mt-5 ">
+    <?php if(!empty($_GET['msgErro'])) { ?>
+            <div class="alert alert-warning text-danger col-2 mx-auto" role="alert">
+                <?php echo $_GET["msgErro"];?>
+            </div>
+    <?php };?>
+</div>
+<!-- Div para Messagem de sucesso ao adicionar elementos no SQL -->
+<div class="container mt-5">
+    <?php if(!empty($_GET['msgSucesso'])) { ?>
+            <div class="alert alert-success" role="alert">
+                <?php echo $_GET["msgSucesso"];?>
+            </div>
+    <?php };?>
+</div> 
+
   
   
 
@@ -33,6 +50,9 @@
     </form>
     
 </div>
+
+
+
 
 
 
@@ -86,62 +106,85 @@ if (!empty($_POST['primeiro_nome'])){
         if (empty($resposta)){
             
             
-            //Redirecionado para página de pequisa com erro de não encontrado
-            echo '<div class="container row mt-3 m-auto">';
-            echo '<div class="col-4 m-auto">';
-            // Script de alerta
-            echo '<div class="alert alert-warning " role="alert">';
-            echo 'Aluno não cadastrado...';        
-            echo '</div>';
-            echo '</div>';
-            echo '</div>';
+            // //Redirecionado para página de pequisa com erro de não encontrado
+            // echo '<div class="container row mt-3 m-auto">';
+            // echo '<div class="col-4 m-auto">';
+            // // Script de alerta
+            // echo '<div class="alert alert-warning " role="alert">';
+            // echo 'Aluno não cadastrado...';        
+            // echo '</div>';
+            // echo '</div>';
+            // echo '</div>';
             
             
         }else{
             
-            echo '<table class="container table table-hover">';
-            echo '<thead>';
-            echo '<tr>';
+            // echo '<table class="container table table-hover">';
+            // echo '<thead>';
+            // echo '<tr>';
             
-            echo '<th>--</th>';
-            echo '<th>Foto</th>';
-            echo '<th>Nome</th>';
-            echo '<th>Sobre Nome</th>';
-            echo '<th>Cidade</th>';
-            echo '<th>Sexo</th>';
+            // echo '<th>--</th>';
+            // echo '<th>Foto</th>';
+            // echo '<th>Nome</th>';
+            // echo '<th>Sobre Nome</th>';
+            // echo '<th>Cidade</th>';
+            // echo '<th>Sexo</th>';
             
             
             
-            echo '</tr>';
-            echo '</thead>';
-            echo '<tbody>';
+            // echo '</tr>';
+            // echo '</thead>';
+            // echo '<tbody>';
             
             
             
             foreach ($resposta as $n){
+
                 
-                echo '<tr>';
-                echo "<td>";
+                echo '<div class="img-jonas card container bg-success mb-4 shadow" style="width: 18rem;">';
+                echo "<img src=img/{$n['imagem']} class='card-img-top mt-3 img-thumbnail bg-warning' alt='aluno'/>";
+                echo '<ul class="list-group list-group-flush mt-1 rounded-pill border ">';
+                echo "<li class='list-group-item bg-warning '><h5>{$n['primeiro_nome']}</h5></li>";
+                echo '</ul>';
+              
+               
+                // echo '<div class="card-body">';
+                //     echo '<h5 class="card-title">Card title</h5>';
+                //     echo "<p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p>";
+                // echo '</div>';
                 
-                echo '<td> <img src=img/'.$n["imagem"].' width="75" height="75"/> </td>';
-                echo "<td>{$n['primeiro_nome']}</td>";
-                echo "<td>{$n['segundo_nome']}</td>";
-                echo "<td>{$n['cidade']}</td>";
-                echo "<td>{$n['sexo']}</td>";
+
+                echo '<div class="card-body">';
+                    echo "<a href='lista_notas_luno&id_aluno={$n['id']}' class='card-link text-white'>Avaliar notas</a>";
+                //     echo '<a href="#" class="card-link">Another link</a>';
+                // echo '</div>';
+                echo '</div>';
+
+
+
+                
+                // echo '<tr>';
+                // echo "<td>";
+                
+                // echo '<td> <img src=img/'.$n["imagem"].' width="75" height="75"/> </td>';
+                // echo "<td>{$n['primeiro_nome']}</td>";
+                // echo "<td>{$n['segundo_nome']}</td>";
+                // echo "<td>{$n['cidade']}</td>";
+                // echo "<td>{$n['sexo']}</td>";
                 
                 
                 //Opção para adicionar notas
                 
                 
-                echo "</td>";
-                echo '</tr>';
+                // echo "</td>";
+                // echo '</tr>';
                 
                 
                 
             }
             
-            echo '</tbody>';
-            echo '</table>';
+            // echo '</tbody>';
+            // echo '</table>';
             
             
             
@@ -177,4 +220,5 @@ if (!empty($_POST['primeiro_nome'])){
 ?>
         
 </div>
-        
+
+
